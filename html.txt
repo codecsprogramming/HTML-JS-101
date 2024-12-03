@@ -1,0 +1,9 @@
+1. HTML structure: <!DOCTYPE>, <html>, <head>, <body>.
+2. Common tags: p, h1-6, div, a, img, iframe
+3. Attributes: id, name, class.
+4. form
+    a. method, action, enctype
+    b. input types, hidden, button
+    c. value, autocomplete, required, disabled
+5. script tag
+6. Misusing hidden fields in clickjacking

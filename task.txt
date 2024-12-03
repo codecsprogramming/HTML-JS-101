@@ -1,0 +1,7 @@
+TASK: registration, login
+Features:
+1. Registration form - username, password, email, full name
+2. Database: json file
+3. Login form - username, password
+4. Assign cookie
+5. Profile page

@@ -1,0 +1,8 @@
+1. Basics: Variables, arrays, objects, functions, 
+2. Built-in classes and methods
+3. What is DOM?
+4. DOM manipulation: document.getElementById(), innerHTML.
+5. cookie, localStorage, sessionStorage
+6. Event handling: onclick, onmouseover, onload.
+7. console.log, alert, prompt, timeout
+8. fetch
