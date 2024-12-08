@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="eded1">Eded 1</label>
+    <input type="number" name="eded1" id="eded1">
+    <br><br>
+    <label for="eded2">Eded 1</label>
+    <input type="number" name="eded2" id="eded2">
+    <br><br>
+    <button id="button">Calculate</button>
+    <div>Result: </div>
+    
+    <script>
+        document.getElementById("button").onclick = function() {
+            let eded1_el = document.getElementById("eded1");
+            console.log(eded1_el.value);
+        }
+        
+    </script>
+</body>
+</html>
