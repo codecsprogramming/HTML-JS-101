@@ -1,0 +1,32 @@
+Array
+    Functions: Function declaration and expression, Arrow functions, Anonymous functions
+    ( () => {
+    } )();
+    atob / btoa
+    eval
+    decodeURI, URLSearchParams
+    length, split, replace
+    charCodeAt
+    Template literals/string interpolation `${}`
+
+DOM Basics
+
+   What is DOM?
+    Relationship between HTML, CSS, and JavaScript
+    DOM tree structure (parent, child, siblings)
+
+        window.open
+    window.location
+        Navigating with location.href
+        Reloading with location.reload()
+
+    Functions
+        Function declaration and expression
+        Arrow functions
+        Anonymous functions
+        Function hoisting
+        setTimeout / setInterval
+
+    cookie
+    localStorage
+    sessionStorage
