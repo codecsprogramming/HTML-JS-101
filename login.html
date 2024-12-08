@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="register" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Type your username...">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <!-- <input type="submit" value="Submit" disabled> -->
+        <br><br>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio"></textarea>
+        <br><br>
+        <label for="robot">Are you robot:</label>
+        <input type="checkbox" name="robot" id="robot">
+        <input type="checkbox" name="robot" id="robot">
+        <br><br>
+        <label for="dob">Date of birth</label>
+        <input type="date" name="date" id="date">
+        <br><br>
+        <label for="gender">Gender:</label>
+        <p>Female</p>
+        <input type="radio" name="gender" id="gender" value="F">
+        <p>Male</p>
+        <input type="radio" name="gender" id="gender" value="M">
+        <br><br>
+        <input type="hidden" name="csrftoken" id="csrftoken" value="DFGVDGJNDFNJGS23R45325R34254SDGVF">
+        <button>Submit</button>
+    </form>
+</body>
+</html>
