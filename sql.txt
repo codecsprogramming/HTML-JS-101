@@ -1,0 +1,11 @@
+create table
+Data types: varchar(size), text, int, autoincrement, bool, float, date, blob
+insert into table(col1, col2) values(val1, val2)
+select * from
+update table set col1=val3 where
+delete from table where
+union
+order by col, 1
+limit
+offset
+
