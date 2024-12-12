@@ -1,11 +1,64 @@
-create table
-Data types: varchar(size), text, int, autoincrement, bool, float, date, blob
-insert into table(col1, col2) values(val1, val2)
-select * from
-update table set col1=val3 where
-delete from table where
-union
+1. SQL vs NoSQL
+
+2. Create table
+CREATE TABLE ExampleTable (
+    id INT AUTO_INCREMENT PRIMARY KEY, -- Auto-incrementing integer column as primary key
+    name VARCHAR(255),                 -- Variable-length string
+    description TEXT,                  -- Long text field
+    age INT,                           -- Integer field
+    is_active BOOL,                    -- Boolean field
+    score FLOAT,                       -- Floating-point number
+    created_at DATE,                   -- Date field
+    file_data BLOB                     -- Binary large object
+);
+
+3. insert
+INSERT INTO ExampleTable (name, description, age, is_active, score, created_at, file_data) 
+VALUES (
+    'John Doe',
+    'This is a sample description',
+    30,
+    TRUE,
+    85.5,
+    '2024-12-12',
+    'sample data' -- Binary data (converted automatically to BLOB)
+);
+
+or
+
+For file:
+    LOAD_FILE('/path/to/your/file') -- Path to the binary file
+    x'89504E470D0A1A0A0000000D494844520000001000000010080200000090916836000000017352474200AECE1CE90000000467414D410000B18F0BFC6105000000097048597300000EC300000EC301C76FA8640000001E49444154384F6350DAE843126220493550F1A80662426C349406472801006AC91F1040F796BD0000000049454E44AE426082'
+    0x89504E470D0A1A0A0000000D494844520000001000000010080200000090916836000000017352474200AECE1CE90000000467414D410000B18F0BFC6105000000097048597300000EC300000EC301C76FA8640000001E49444154384F6350DAE843126220493550F1A80662426C349406472801006AC91F1040F796BD0000000049454E44AE426082
+
+4. select 
+select *
+rename column in result
 order by col, 1
 limit
 offset
+comments
+    From a # character to the end of the line.
+    From a -- sequence to the end of the line. ...
+    From a /* sequence to the following */ sequence, as in the C programming language.
+    
+5. update table
 
+6. delete from table
+
+7. functions
+ASCII
+LENGTH
+SUBSTR, SUBSTRING
+CONCAT, CONCAT_WS
+
+8. union
+number of columns same
+columns of same data type
+columns in the result set are named - first SELECT statement
+union all
+
+9. relationships
+one to one - foreign key (id) references table(id)
+one to many
+many to many - join table
