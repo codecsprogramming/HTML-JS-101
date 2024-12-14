@@ -8,6 +8,8 @@ TASK:
 6. Insert rows
 administrator, password, admin
 nuraya, password
+hikmat, password
+nicat, password
 
 7. select number of normal users
 
