@@ -3,7 +3,7 @@ TASK:
 2. username unique olmalidi
 3. password sha256-di, 32 bytes
 4. role - admin, normal, default normal
-5. username unique-dir
+5. username unique-dir, password null ola bilmez
 
 6. Insert rows
 administrator, password, admin
