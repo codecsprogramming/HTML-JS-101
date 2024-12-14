@@ -1,8 +1,3 @@
-show databases;
-use information_schema;
-show tables;
-describe tables;
-
 use code;
 CREATE TABLE ExampleTable2 (
     user_id INT AUTO_INCREMENT PRIMARY KEY, -- Auto-incrementing integer column as primary key
@@ -17,9 +12,9 @@ CREATE TABLE ExampleTable2 (
 
 describe exampletable;
 
-INSERT INTO ExampleTable3 (username, description, age, is_active, score, created_at, file_data) 
+INSERT INTO ExampleTable2 (username, description, age, is_active, score, created_at, file_data) 
 VALUES (
-    "Aisha",
+    "Aishsda",
     'b',
     1000,
     TRUE,
@@ -28,7 +23,7 @@ VALUES (
     "dsfgsd"
 );
 
-select * from exampletable where score < 60 or score > 70;
+select count(user_id) from exampletable2;
 
 select score from exampletable where score < 60 order by score desc;
 
@@ -41,7 +36,7 @@ delete from exampletable where user_id = 1;
 select * from exampletable; 
 
 
-CREATE TABLE ExampleTable4 (
+CREATE TABLE ExampleTable (
     user_id INT AUTO_INCREMENT PRIMARY KEY, -- Auto-incrementing integer column as primary key
     username VARCHAR(255) unique,                 -- Variable-length string
     city enum ("Baku", "Sumqayit"),                  -- Long text field
