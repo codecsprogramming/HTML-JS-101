@@ -1,0 +1,55 @@
+show databases;
+use information_schema;
+show tables;
+describe tables;
+
+use code;
+CREATE TABLE ExampleTable2 (
+    user_id INT AUTO_INCREMENT PRIMARY KEY, -- Auto-incrementing integer column as primary key
+    username VARCHAR(255) unique,                 -- Variable-length string
+    description TEXT,                  -- Long text field
+    age INT,                           -- Integer field
+    is_active BOOL,                    -- Boolean field
+    score FLOAT,                       -- Floating-point number
+    created_at DATE,                   -- Date field
+    file_data BLOB                     -- Binary large object
+); 
+
+describe exampletable;
+
+INSERT INTO ExampleTable3 (username, description, age, is_active, score, created_at, file_data) 
+VALUES (
+    "Aisha",
+    'b',
+    1000,
+    TRUE,
+    10,
+    '2024-12-12',
+    "dsfgsd"
+);
+
+select * from exampletable where score < 60 or score > 70;
+
+select score from exampletable where score < 60 order by score desc;
+
+select username, score from exampletable order by 2;
+
+update exampletable set username = "Lamiya" where user_id = 2;
+
+delete from exampletable where user_id = 1;
+
+select * from exampletable; 
+
+
+CREATE TABLE ExampleTable4 (
+    user_id INT AUTO_INCREMENT PRIMARY KEY, -- Auto-incrementing integer column as primary key
+    username VARCHAR(255) unique,                 -- Variable-length string
+    city enum ("Baku", "Sumqayit"),                  -- Long text field
+    age INT not null,                           -- Integer field
+    is_active BOOL default FALSE,                    -- Boolean field
+    score FLOAT,                       -- Floating-point number
+    created_at DATE,                   -- Date field
+    file_data BLOB                     -- Binary large object
+); 
+show tables;
+drop table users;
